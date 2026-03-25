@@ -17,7 +17,7 @@
       h1 {
           color:#00ffcc;
           font-size: 42px;
-          text-shadow: 0 o 10px#00ffcc;
+          text-shadow: 0 0 10px#00ffcc;
           margin-top: 30px;
       }
 
@@ -35,9 +35,16 @@
       img {
           width: 280px;
           border-radius: 20px;
-          margin-top: 20px
+          margin-top: 20px;
           box-shadow: 0 0 20px #00ffcc;
-      }
+          
+          animation: latido 1.5s infinite;
+        }
+    @keyframes latidos {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.08); }
+        100% { transform: scale(1); }
+    }
 
       button {
           background:#00ffcc;
@@ -48,10 +55,12 @@
           cursor: pointer;
           margin-top: 20px;
           transition: 0.3s;
+          box-shadow: 0 0 10px#00ffcc;
       }
       button:hover {
           background:#00ccaa;
           transform: scale(1.1);
+          box-shadow: 0 0 20px #00ffcc;
       }
 
       .huella {
@@ -64,10 +73,18 @@
           color:#ffcc00;
           text-shadow: 0 0 10px #ffcc00;
       }
+body {
+    text-align:center;
+    margin: 0;
+    padding: 0;
 
-      .huella o {
-          margin: 10px 0;
-      }
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;    /*centra vertical */
+    height: 100vh;             /*ocupa toda la pantella */
+}
+      
 
 </style>
 </head>
@@ -82,7 +99,7 @@
      A veces...  hay alguien que hace que todo esto valga mas 💖
  </p>
 
-<img src="https;//i.imgur.com/3ZQ3Z4H.png">
+<img src="https://wallpapers.com/images/hd/neon-heart-6od10mdlj2m916e8.jpg" style="display:block; margin:auto; width:300px; border-radius:15px;"> 
 
 <br>
 
